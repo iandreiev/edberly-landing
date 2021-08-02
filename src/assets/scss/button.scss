@@ -1,0 +1,95 @@
+.btn {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @include transition(.3s ease-in);
+    &-row{
+        display: flex;
+        flex-direction: row;
+    }
+    &-default{
+        padding: 18px 32px;
+        border-radius: 20px;
+        &--regular{
+            border: 1px solid #1B2FB1;
+            background: $color-fill-button-klein-blue;
+            span{
+            color: $color-fill-button-white;
+            @include text-style-button-button-18;
+            
+            }
+            &:hover{
+                background: $color-fill-button-klein-blue;
+                color: $color-fill-button-white;
+            }
+        }
+    }
+    &-secondary{
+        padding: 18px 32px;
+        border-radius: 20px;
+        &--white{
+            border: 1px solid $color-fill-button-white;
+            background: $color-fill-button-white;
+            span{
+            color: $color-text-body-klein-blue;
+            @include text-style-button-button-18;
+            }
+            &:hover{
+                background: $color-fill-button-ghost-white;
+
+                span{
+                    color: $color-fill-button-klein-blue;
+                }
+            }
+        }
+        &--regular{
+            border: 1px solid $color-fill-button-ghost-white;
+            background: $color-fill-button-ghost-white;
+            span{
+            color: $color-text-body-klein-blue;
+            @include text-style-button-button-18;
+            }
+            &:hover{
+                background: $color-fill-button-klein-blue;
+
+                span{
+                    color: $color-fill-button-white;
+                }
+            }
+        }
+    }
+    &-flat{
+        padding: 18px 32px;
+        border: none;
+        font-weight: 500;
+        background: none;
+        &--regular{
+            span{
+                color: $color-text-body-klein-blue;
+                @include text-style-button-button-18;
+            }
+        }
+    }
+    &-outline {
+        box-sizing: border-box;
+        border-radius: 18px;
+        padding: 10px 24px;
+        background: none;
+        &--regular {
+            border: 1px solid #1B2FB1;
+            color: $color-text-button-klein-blue;
+            span{
+                @include text-style-button-button-18;
+            color: $color-text-button-klein-blue;
+
+            }
+            &:hover{
+                background: $color-fill-button-klein-blue;
+                color: $color-fill-frame-white;
+            }
+        }
+    }
+}

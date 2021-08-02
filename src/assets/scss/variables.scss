@@ -1,0 +1,108 @@
+$color-fill-frame-ghost-white: rgba(237,241,253,1);
+$color-fill-frame-azure: rgba(239,250,254,1);
+$color-fill-frame-white: rgba(255,255,255,1);
+$color-fill-frame-linen: rgba(251,240,230,1);
+$color-fill-frame-alice-blue: rgba(231,239,254,1);
+$color-fill-button-ghost-white: rgba(237,241,253,1);
+$color-fill-button-white: rgba(255,255,255,1);
+$color-fill-button-ultramarine-blue: rgba(90,108,227,1);
+$color-fill-button-klein-blue: rgba(27,47,177,1);
+$color-text-headline-klein-blue: rgba(27,47,177,1);
+$color-text-button-klein-blue: rgba(27,47,177,1);
+$color-text-button-bluetiful: rgba(29,98,245,1);
+$color-text-button-white: rgba(255,255,255,1);
+$color-text-button-ultramarine-blue: rgba(90,108,227,1);
+$color-text-button-ghost-white: rgba(237,241,253,1);
+$color-text-body-klein-blue: rgba(27,47,177,1);
+$color-text-body-blue-yonder: rgba(89,105,201,1);
+$color-text-body-purple-navy: rgba(77,83,128,1);
+$color-text-body-lavender-gray: rgba(212,214,226,1);
+$color-text-caption-klein-blue: rgba(27,47,177,1);
+$color-text-caption-wild-blue-yonder: rgba(143,148,178,1);
+$color-text-caption-blue-yonder: rgba(89,105,201,1);
+$color-text-tagline-wild-blue-yonder: rgba(143,148,178,1);
+$color-stroke-border-klein-blue: rgba(27,47,177,1);
+$color-stroke-border-cultured: rgba(237,238,245,1);
+$color-stroke-border-ultramarine-blue: rgba(90,108,227,1);
+$color-stroke-border-maximum-blue: rgba(177,185,242,1);
+$color-stroke-border-white: rgba(255,255,255,1);
+$color-icons-klein-blue: rgba(27,47,177,1);
+$color-icons-white: rgba(255,255,255,1);
+$color-icons-ultramarine-blue: rgba(90,108,227,1);
+$color-icons-ghost-white: rgba(237,241,253,1);
+
+
+$logo-blue: url(../img/Header/edberly.svg);
+$header-cta: url(../img/IllustrationHeaderIcons.svg);
+$szkolenie-cta: url(../img/IllustrationCtaSzkolenie.svg);
+$money-cta: url(../img/money_icons.svg);
+$placeholder: url(../img/image.png);
+
+$px: 8px;
+
+@mixin text-style-headline-large-title {
+	font-size:72px;
+	font-family:"Poppins";
+	font-weight:400;
+	font-style:normal;
+	line-height:78px;
+}
+@mixin text-style-headline-h-2 {
+	font-size:48px;
+	font-family:"Poppins";
+	font-weight:400;
+	font-style:normal;
+	line-height:56px;
+}
+@mixin text-style-headline-h-3 {
+	font-size:36px;
+	font-family:"Poppins";
+	font-weight:400;
+	font-style:normal;
+	line-height:48px;
+}
+@mixin text-style-headline-h-4 {
+	font-size:24px;
+	font-family:"Poppins";
+	line-height:32px;
+}
+@mixin text-style-headline-h-5 {
+	font-size:20px;
+	font-family:"Poppins";
+	line-height:28px;
+}
+@mixin text-style-body-body-24 {
+	font-size:24px;
+	font-family:"Poppins";
+	font-weight:normal;
+	font-style:normal;
+	line-height:36px;
+}
+@mixin text-style-body-body-18 {
+	font-size:18px;
+	font-family:"Poppins";
+	font-weight:normal;
+	font-style:normal;
+	line-height:24px;
+}
+@mixin text-style-button-button-18 {
+	font-size:18px;
+	font-family:"Poppins";
+	font-weight:400;
+	font-style:normal;
+	line-height:24px;
+}
+@mixin text-style-caption-cap-14 {
+	font-size:14px;
+	font-family:"Poppins";
+	font-weight:normal;
+	font-style:normal;
+	line-height:24px;
+}
+@mixin text-style-tagline-tag-10 {
+	font-size:10px;
+	font-family:"Poppins";
+	font-weight:normal;
+	font-style:normal;
+	line-height:14px;
+}

@@ -1,0 +1,30 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 100px 1fr 200px;
+    gap: 32px;
+    align-items: center;
+    padding: abs($px*2) abs($px*4);
+    &-fixed{
+        position: fixed;
+        width: 100%;
+        background-color: transparentize($color-icons-white, .4);
+        backdrop-filter: blur(3px);
+        padding: 16px 32px;
+    }
+    &-logo{
+        background: $logo-blue center center no-repeat;
+        width: auto;
+        height: 72px;
+        background-size: contain;
+    }
+    &-items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        &-item{
+            margin: 0px abs($px);
+        }
+    }
+    &-cta{}
+}

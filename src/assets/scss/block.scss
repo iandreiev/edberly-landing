@@ -1,0 +1,93 @@
+.section{
+    &-cta{
+        padding: abs($px*4);
+        &--header{
+            background: $header-cta center center no-repeat;
+            background-size: contain;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &--szkolenie{
+            background: $color-fill-frame-linen $szkolenie-cta center center no-repeat;
+            background-size: contain;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &--grosze{
+            background: $color-fill-frame-alice-blue $money-cta center center no-repeat;
+            background-size: contain;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            @include text-style-headline-large-title;
+            color: $color-text-headline-klein-blue;
+            margin-bottom: abs($px*4);
+            max-width: 60%;
+            text-align: center;
+        }
+        p{
+            @include text-style-body-body-24;
+            color: $color-text-body-purple-navy;
+        }
+        .only-text{
+            margin-bottom: abs($px*4);
+            max-width: 60%;
+            text-align: center;
+            }
+    }
+    &-row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &-block{
+        padding: abs($px*4);
+        padding-left: abs($px*10);
+        max-width: 50%;
+        h2{
+            @include text-style-headline-h-2;
+            color: $color-text-body-klein-blue;
+            margin-bottom: abs($px*2);
+        }
+        p{
+            @include text-style-body-body-24;
+            color: $color-text-body-blue-yonder;
+        }
+        &-image{
+            max-width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            padding: abs($px*4) 0px;
+        }
+        &-paragraph{
+            margin-bottom: abs($px*4);
+        }
+    }
+    &-default{
+        background: $color-icons-white;
+    }
+    &-blue{
+        background: $color-fill-frame-azure;
+    }
+    &-golden{
+        background: $color-fill-frame-linen;
+    }
+    &-placeholder{
+        background: $placeholder;
+        height: 480px;
+        width: 600px;
+        background-size: cover;
+    }
+}
