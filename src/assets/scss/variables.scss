@@ -30,7 +30,7 @@ $color-icons-klein-blue: rgba(27,47,177,1);
 $color-icons-white: rgba(255,255,255,1);
 $color-icons-ultramarine-blue: rgba(90,108,227,1);
 $color-icons-ghost-white: rgba(237,241,253,1);
-
+$color-logo: #1D62F5;
 
 $logo-blue: url(../img/Header/edberly.svg);
 $header-cta: url(../img/IllustrationHeaderIcons.svg);
@@ -65,11 +65,13 @@ $px: 8px;
 	font-size:24px;
 	font-family:"Poppins";
 	line-height:32px;
+	font-weight: 500;
 }
 @mixin text-style-headline-h-5 {
 	font-size:20px;
 	font-family:"Poppins";
 	line-height:28px;
+	font-weight: 500;
 }
 @mixin text-style-body-body-24 {
 	font-size:24px;

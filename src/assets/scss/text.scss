@@ -1,0 +1,6 @@
+.text{
+    &-caption{
+        color: $color-text-caption-blue-yonder;
+        @include text-style-caption-cap-14;
+    }
+}

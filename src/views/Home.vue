@@ -121,11 +121,13 @@ Użyj specjalnego systemu podpowiedzi, jeśli zadanie jest zbyt trudne
     <div class="section-cta section-cta--grosze">
        <h1>Zwrócimy pieniądze, jeśli nie zdasz egzaminu</h1>
     </div>
+    <footer-regular />
   </div>
 </template>
 
 <script>
 import BtnRegular from "../components/btn/btn-regular.vue";
+import FooterRegular from '../components/footer/footer-regular.vue';
 import IconRegular from '../components/icons/icon-regular.vue';
 import NavbarRegular from "../components/navbar/navbar-regular.vue";
 export default {
@@ -133,6 +135,7 @@ export default {
     NavbarRegular,
     BtnRegular,
     IconRegular,
+    FooterRegular,
   },
 };
 </script>
