@@ -1,0 +1,55 @@
+//ACCORDION > FAQ
+
+.faq {
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        margin: abs($px*4) auto;
+    }
+
+    &-item {
+        // margin: 8px 0px;
+        border: 1px solid $color-stroke-border-cultured;
+        border-left: navajowhite;
+        border-right: none;
+        border-bottom: none;
+        // margin-bottom: 4px;
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+            border-radius: abs($px);
+            background: $color-fill-frame-ghost-white;
+            margin: $px 0px;
+            &-question{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: abs($px*2);
+                .icon{
+                    color: $color-text-caption-klein-blue;
+                    cursor: pointer;
+                }
+            }
+            &-answer{
+                padding: 0px abs($px*2);
+                padding-bottom: abs($px*2);
+                p{
+                    color: $color-text-caption-blue-yonder;
+                }
+            }
+            .faq{
+                &-title{
+                    @include text-style-body-body-18;
+                    color: $color-text-caption-klein-blue;
+                }
+            }
+
+            &--active {
+                background: $color-fill-frame-ghost-white;
+            }
+        }
+    }
+}

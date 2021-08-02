@@ -1,5 +1,5 @@
 <template>
-  <div class="icon" :slot="slotname" :class="iconClass"></div>
+  <div class="icon" :slot="slotname" @click="cb($event)" :class="iconClass"></div>
 </template>
 
 <script>
@@ -16,11 +16,22 @@ export default {
         },
         slotname:{
             type:String
+        },
+        asButton:{
+            type:Boolean,
+            default: false
         }
     },
     computed:{
         iconClass(){
             return `ic-${this.size} ic-${this.name}`
+        }
+    },
+    methods:{
+        cb(event){
+            if(this.asButton == true){
+                this.$emit('click',event)
+            }
         }
     }
 }

@@ -1,6 +1,31 @@
+h1{
+    @include text-style-headline-large-title;
+    color: $color-text-button-klein-blue;
+}
+h2{
+    @include text-style-headline-h-2;
+    color: $color-text-button-klein-blue;
+}
+
 .text{
     &-caption{
         color: $color-text-caption-blue-yonder;
         @include text-style-caption-cap-14;
+    }
+    &-heading{
+        margin-bottom: abs($px*4);
+    }
+}
+
+// Align
+.text{
+    &-center{
+        text-align: center;
+    }
+    &-left{
+        text-align: left;
+    }
+    &-right{
+        text-align: right;
     }
 }

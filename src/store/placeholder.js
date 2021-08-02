@@ -1,3 +1,30 @@
+module.exports.faq = [
+    {
+        id: 0,
+        active: true,
+        question: 'Id enim duis vel leo semper est lorem',
+        answer: 'Urna, tellus risus faucibus sodales et, suspendisse ac. Pharetra feugiat facilisis elementum nunc, leo sit tempus imperdiet ut.'
+    },
+    {
+        id: 1,
+        active: false,
+        question: 'Id enim duis vel leo semper est lorem',
+        answer: 'Urna, tellus risus faucibus sodales et, suspendisse ac. Pharetra feugiat facilisis elementum nunc, leo sit tempus imperdiet ut.'
+    },
+    {
+        id: 2,
+        active: false,
+        question: 'Id enim duis vel leo semper est lorem',
+        answer: 'Urna, tellus risus faucibus sodales et, suspendisse ac. Pharetra feugiat facilisis elementum nunc, leo sit tempus imperdiet ut.'
+    },
+    {
+        id: 3,
+        active: false,
+        question: 'Id enim duis vel leo semper est lorem',
+        answer: 'Urna, tellus risus faucibus sodales et, suspendisse ac. Pharetra feugiat facilisis elementum nunc, leo sit tempus imperdiet ut.'
+    }
+]
+
 module.exports.nav = [
     {
         id: 0,

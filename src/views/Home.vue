@@ -121,12 +121,19 @@ Użyj specjalnego systemu podpowiedzi, jeśli zadanie jest zbyt trudne
     <div class="section-cta section-cta--grosze">
        <h1>Zwrócimy pieniądze, jeśli nie zdasz egzaminu</h1>
     </div>
+    <faq-wrapper>
+      <h1 class="text-center text-heading">FAQ</h1>
+      <faq-item v-for="i in faq" :key="i.id" :data="i" /> 
+    </faq-wrapper>
     <footer-regular />
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import BtnRegular from "../components/btn/btn-regular.vue";
+import FaqItem from '../components/faq/faq-item.vue';
+import FaqWrapper from '../components/faq/faq-wrapper.vue';
 import FooterRegular from '../components/footer/footer-regular.vue';
 import IconRegular from '../components/icons/icon-regular.vue';
 import NavbarRegular from "../components/navbar/navbar-regular.vue";
@@ -136,7 +143,12 @@ export default {
     BtnRegular,
     IconRegular,
     FooterRegular,
+    FaqWrapper,
+    FaqItem,
   },
+  computed:{
+    ...mapState(["faq"])
+  }
 };
 </script>
 

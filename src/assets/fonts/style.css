@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'edberly-font';
   src:
-    url('fonts/edberly-font.ttf?31dgaw') format('truetype'),
-    url('fonts/edberly-font.woff?31dgaw') format('woff'),
-    url('fonts/edberly-font.svg?31dgaw#edberly-font') format('svg');
+    url('../fonts/edberly-font.ttf') format('truetype'),
+    url('../fonts/edberly-font.woff') format('woff'),
+    url('../fonts/edberly-font.svg?#edberly-font') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
