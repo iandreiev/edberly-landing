@@ -140,6 +140,7 @@ import LessonItem from '../components/lessons/lesson-item.vue';
 import LessonWrapper from '../components/lessons/lesson-wrapper.vue';
 import navbarRegular from '../components/navbar/navbar-regular.vue'
 export default {
+    
   components: { navbarRegular, FooterRegular,FaqWrapper, FaqItem, BtnRegular,LessonWrapper, LessonItem, IconRegular, Callback },
     computed:{
           ...mapState(["faq", "howto", "themes", "subscription"])

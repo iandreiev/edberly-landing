@@ -151,7 +151,7 @@ export default {
     Callback,
   },
   computed:{
-    ...mapState(["faq"])
+    ...mapState(["faq"]),
   }
 };
 </script>
