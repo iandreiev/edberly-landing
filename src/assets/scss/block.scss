@@ -1,93 +1,347 @@
-.section{
-    &-cta{
+.section {
+    &-cta {
         padding: abs($px*4);
-        &--header{
+
+        &--header {
             background: $header-cta center center no-repeat;
-            background-size: contain;
+            background-size: 80%;
             height: 600px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        &--szkolenie{
+
+        &--szkolenie {
             background: $color-fill-frame-linen $szkolenie-cta center center no-repeat;
-            background-size: contain;
+            background-size: 40%;
             height: 400px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        &--grosze{
+
+        &--grosze {
             background: $color-fill-frame-alice-blue $money-cta center center no-repeat;
-            background-size: contain;
+            background-size: 40%;
             height: 400px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        h1{
+
+        h1 {
             @include text-style-headline-large-title;
             color: $color-text-headline-klein-blue;
             margin-bottom: abs($px*4);
             max-width: 60%;
             text-align: center;
         }
-        p{
+
+        p {
             @include text-style-body-body-24;
             color: $color-text-body-purple-navy;
         }
-        .only-text{
+
+        .only-text {
             margin-bottom: abs($px*4);
             max-width: 60%;
             text-align: center;
-            }
+        }
     }
-    &-row{
+
+    &-row {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
     }
-    &-block{
+
+    &-block {
         padding: abs($px*4);
         padding-left: abs($px*10);
         max-width: 50%;
-        h2{
+
+        h2 {
             @include text-style-headline-h-2;
             color: $color-text-body-klein-blue;
             margin-bottom: abs($px*2);
         }
-        p{
+
+        p {
             @include text-style-body-body-24;
             color: $color-text-body-blue-yonder;
         }
-        &-image{
+
+        &-image {
             max-width: 100%;
             display: flex;
             justify-content: flex-end;
             width: 50%;
             padding: abs($px*4) 0px;
         }
-        &-paragraph{
+
+        &-paragraph {
             margin-bottom: abs($px*4);
         }
     }
-    &-default{
+
+    &-default {
         background: $color-icons-white;
     }
-    &-blue{
+
+    &-blue {
         background: $color-fill-frame-azure;
     }
-    &-golden{
+
+    &-golden {
         background: $color-fill-frame-linen;
     }
-    &-placeholder{
+
+    &-placeholder {
         background: $placeholder;
         height: 480px;
         width: 600px;
         background-size: cover;
+    }
+
+    &-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: abs($px*6) 0;
+    }
+    &-pricing{
+        h2,h4{
+            margin-bottom: abs($px*2);
+        }
+
+        h4{
+            @include text-style-headline-h-4;
+            color: $color-text-body-klein-blue;
+        }
+
+        p{
+            @include text-style-body-body-18;
+            color: $color-text-body-klein-blue;
+        }
+
+        h2.price{
+            margin: abs($px*3) 0;
+            font-weight: 700;
+        }
+
+        .sub{
+            &-grid{
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(2, 400px);
+                grid-template-rows: repeat(4, 1fr);
+                gap: 16px;
+                margin: abs($px*4) 0;
+            }
+            &-item{
+                display: grid;
+                grid-template-columns: 24px 1fr;
+                align-items: center;
+                gap: 16px;
+            }
+        }
+    }
+}
+
+
+// Callback form
+.callback{
+    &-form{
+        margin: abs($px*8) auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        h2{
+            text-align: center;
+            margin-bottom: abs($px*3);
+        }
+        .form-controller{
+            width: 100%;
+            margin: abs($px) 0px;
+            input{
+                width: inherit;
+            }
+        }
+        .btn{
+            margin-top: $px;
+        }
+    }
+}
+
+
+// LISTS
+
+.list {
+
+    //Images
+    &-image {
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            margin-top: abs($px*3);
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                margin-top: abs($px*3);
+                @include text-style-headline-h-4;
+                color: $color-text-body-klein-blue;
+            }
+        }
+    }
+
+    &-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: abs($px*4) 0px;
+
+        &-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: 30%;
+
+            p {
+                @include text-style-body-body-18;
+                color: $color-text-caption-klein-blue;
+            }
+
+            &-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 12px;
+                background: $color-fill-frame-ghost-white;
+                border-radius: 24px;
+                margin-right: 24px;
+            }
+        }
+    }
+
+}
+
+
+.teacher {
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        margin: abs($px*6) 0px;
+    }
+
+    &-block {
+        &-summary {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 0px 64px;
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                margin: abs($px*3) 0px;
+                &-item {
+                    display: grid;
+                    grid-template-columns: 24px 1fr;
+                    gap: 16px;
+                    align-items: center;
+                    max-width: 70%;
+                    margin: $px 0px;
+                    p{
+                        @include text-style-body-body-18;
+                        color: $color-text-body-klein-blue;
+                    }
+                    [class^="fm-"], [class*=" fm-"]{
+                        margin-right: $px;
+                    }
+                }
+            }
+
+            &-name {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+
+                // margin: 32px 0px;
+                h3 {
+                    @include text-style-headline-h-3;
+                    color: $color-text-body-klein-blue;
+                }
+
+                p {
+                    @include text-style-body-body-18;
+                    color: $color-text-body-blue-yonder;
+                }
+            }
+        }
+
+        &-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            // margin: 0px 64px;
+
+            &.image {
+                background: $color-fill-frame-alice-blue;
+                border-radius: 32px;
+            }
+
+            &-links {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+
+                a {
+                    color: $color-icons-klein-blue;
+                    text-decoration: none;
+                    margin: $px;
+
+                    &:first {
+                        &::after {
+                            content: " | ";
+                        }
+                    }
+                }
+            }
+        }
     }
 }

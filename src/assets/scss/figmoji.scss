@@ -1,0 +1,34 @@
+$icon-teacher: url(../img/icons/Figmoji/Teacher.svg);
+$icon-hundred: url(../img/icons/Figmoji/100.svg);
+$icon-student: url(../img/icons/Figmoji/Student.svg);
+$icon-heart: url(../img/icons/Figmoji/Heart.svg);
+$icon-laptop: url(../img/icons/Figmoji/boy_laptop.svg);
+$icon-writing: url(../img/icons/Figmoji/Writing.svg);
+
+@mixin icon($name){
+    background: $name center center no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+
+.fm{
+    &-teacher{
+        @include icon($icon-teacher);
+    }
+    &-hundred{
+        @include icon($icon-hundred);
+    }
+    &-heart{
+        @include icon($icon-heart);
+    }
+    &-student{
+        @include icon($icon-student);
+    }
+    &-writing{
+        @include icon($icon-writing);
+    }
+    &-student-laptop{
+        @include icon($icon-laptop);
+    }
+}

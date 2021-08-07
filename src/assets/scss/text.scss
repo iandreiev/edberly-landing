@@ -7,6 +7,16 @@ h2{
     color: $color-text-button-klein-blue;
 }
 
+h3{
+    @include text-style-headline-h-3;
+    color: $color-text-body-klein-blue;
+}
+
+h4{
+    @include text-style-headline-h-4;
+    color: $color-text-body-klein-blue;
+}
+
 .text{
     &-caption{
         color: $color-text-caption-blue-yonder;
@@ -27,5 +37,14 @@ h2{
     }
     &-right{
         text-align: right;
+    }
+}
+
+
+//Icons
+
+.ic{
+    &-24{
+        font-size: 24px;
     }
 }

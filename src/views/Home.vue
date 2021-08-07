@@ -3,6 +3,7 @@
     <navbar-regular />
     <section class="section-cta section-cta--header" name="cta_1">
       <h1>Przygotuj się na 100% do matury</h1>
+      <h2>Gwarancja zdawalności egzaminu</h2>
       <p class="only-text">
         Kursy online z najlepszymi nauczycielami 4 razy tańsze niż zwykły
         korepetytor
@@ -12,7 +13,7 @@
       </btn-regular>
     </section>
     <section class="section-cta section-cta--szkolenie">
-      <h1>Jak idzie Szkolenie?</h1>
+      <h1>Jak przebiega nauka w naszej szkole?</h1>
     </section>
 
     <section class="section-row section-default">
@@ -125,6 +126,7 @@ Użyj specjalnego systemu podpowiedzi, jeśli zadanie jest zbyt trudne
       <h1 class="text-center text-heading">FAQ</h1>
       <faq-item v-for="i in faq" :key="i.id" :data="i" /> 
     </faq-wrapper>
+    <callback />
     <footer-regular />
   </div>
 </template>
@@ -132,6 +134,7 @@ Użyj specjalnego systemu podpowiedzi, jeśli zadanie jest zbyt trudne
 <script>
 import { mapState } from 'vuex';
 import BtnRegular from "../components/btn/btn-regular.vue";
+import Callback from '../components/callback/callback.vue';
 import FaqItem from '../components/faq/faq-item.vue';
 import FaqWrapper from '../components/faq/faq-wrapper.vue';
 import FooterRegular from '../components/footer/footer-regular.vue';
@@ -145,6 +148,7 @@ export default {
     FooterRegular,
     FaqWrapper,
     FaqItem,
+    Callback,
   },
   computed:{
     ...mapState(["faq"])

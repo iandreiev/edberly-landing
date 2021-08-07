@@ -53,3 +53,69 @@
         }
     }
 }
+
+.lesson{
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        margin: abs($px*4) auto;
+        align-items: center;
+    }
+    &-item{
+        display: block;
+        padding: abs($px*4);
+        margin: abs($px*2) 0px;
+        background: $color-fill-frame-ghost-white;
+        border-radius: abs($px*4);
+        width: 900px;
+        &-content{
+            display: none;
+            &--active{
+                display: block;
+                margin-top: abs($px*4);
+                ul{
+                    list-style: disc;
+                    margin-left: abs($px*3);
+                    li{
+                        @include text-style-body-body-18;
+                        color: $color-text-body-klein-blue;
+                    }
+                }
+            }
+        }
+        &-title{
+            
+            &-meta{
+                display: flex;
+                flex-direction: column;
+                h4{
+                    @include text-style-headline-h-3;
+                    color: $color-text-body-klein-blue;
+                }
+                &-wrapper{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .theme{
+                        @include text-style-body-body-18;
+                        color: $color-text-body-klein-blue;
+                        margin-right: $px;
+                    }
+                    .lesson-qty{
+                        @include text-style-body-body-18;
+                        color: $color-text-body-blue-yonder;
+                    }
+                }
+
+            }
+            &-wrapper{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}

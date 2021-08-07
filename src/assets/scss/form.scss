@@ -1,0 +1,27 @@
+.form {
+    &-controller {
+        input[type=text],
+        input[type=number],
+        input[type=email],
+        input[type=url] {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 18px;
+            /* Fill / Frame / White */
+            background: $color-fill-frame-white;
+            /* Stroke/Border/Cultured */
+            border: 2px solid #EDEEF5;
+            box-sizing: border-box;
+            border-radius: 20px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            font-size: 18px;
+            line-height: 24px;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
