@@ -1,5 +1,5 @@
 <template>
-  <div class="faq-item">
+  <div class="faq-item" @click="expandItem()">
      <div class="faq-item-box">
          <div class="faq-item-box-question">
              <p class="faq-title">{{data.question}}</p>

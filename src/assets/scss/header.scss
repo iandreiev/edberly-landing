@@ -11,6 +11,7 @@
         backdrop-filter: blur(3px);
         padding: 16px 32px;
         top: 0;
+        z-index: 99;
     }
     &-logo{
         background: $logo-blue center center no-repeat;

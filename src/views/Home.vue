@@ -1,6 +1,5 @@
 <template>
   <div id="home">
-    <navbar-regular />
     <section class="section-cta section-cta--header" name="cta_1">
       <h1>Przygotuj się na 100% do matury</h1>
       <h2>Gwarancja zdawalności egzaminu</h2>
