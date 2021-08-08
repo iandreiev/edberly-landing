@@ -6,6 +6,7 @@ import store from './store'
 
 import "../src/assets/scss/common.scss"
 
+
 Vue.config.productionTip = false
 
 new Vue({

@@ -13,23 +13,25 @@
         }
 
         &--szkolenie {
-            background: $color-fill-frame-linen $szkolenie-cta center center no-repeat;
-            background-size: 40%;
-            height: 400px;
+            background: $color-fill-frame-linen;
+            height: 900px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
+            
         }
 
         &--grosze {
-            background: $color-fill-frame-alice-blue $money-cta center center no-repeat;
-            background-size: 40%;
-            height: 400px;
+            background: $color-fill-frame-alice-blue;
+            height: 900px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
+            text-align: center;
         }
 
         h1 {

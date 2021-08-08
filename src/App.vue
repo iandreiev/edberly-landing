@@ -1,26 +1,22 @@
 <template>
   <div id="app">
-    <navbarRegular/>
-    <router-view id="jelly"></router-view>
+    <navbarRegular />
+    <div id="jelly">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-
-import {JellyScroll} from "jelly-scroll"
-import navbarRegular from './components/navbar/navbar-regular.vue'
+import navbarRegular from "./components/navbar/navbar-regular.vue";
 
 export default {
   components: { navbarRegular },
-  mounted(){
-    JellyScroll('jelly',{
-    friction: 1, // recommended .5, sets jelly friction
-    strength:250 // recommended 100, sets jelly strenght
-})
-  }
-}
+  mounted() {
+
+  },
+};
 </script>
 
 <style>
-
 </style>

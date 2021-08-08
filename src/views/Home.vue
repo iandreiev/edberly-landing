@@ -1,7 +1,8 @@
 <template>
   <div id="home">
-    <section class="section-cta section-cta--header" name="cta_1">
-      <h1>Przygotuj się na 100% do matury</h1>
+    <cta-header>
+      <div id="content" slot="content" class="cta-masthead-content">
+              <h1>Przygotuj się na 100% do matury</h1>
       <h2>Gwarancja zdawalności egzaminu</h2>
       <p class="only-text">
         Kursy online z najlepszymi nauczycielami 4 razy tańsze niż zwykły
@@ -10,10 +11,15 @@
       <btn-regular :btnClass="'btn-default btn-default--regular'">
         <span slot="btnText">Wybierz kurs</span>
       </btn-regular>
-    </section>
-    <section class="section-cta section-cta--szkolenie">
+      </div>
+    </cta-header>
+
+    <cta-iconery :icons="icons.nauka" :name="'szkolenie'">
+      <div id="content" slot="content" class="section-cta--szkolenie-content">
       <h1>Jak przebiega nauka w naszej szkole?</h1>
-    </section>
+        </div>
+    </cta-iconery>
+
 
     <section class="section-row section-default">
       <div class="section-block">
@@ -118,9 +124,13 @@ Użyj specjalnego systemu podpowiedzi, jeśli zadanie jest zbyt trudne
         <div class="section-placeholder"></div>
       </div>
     </section>
-    <div class="section-cta section-cta--grosze">
-       <h1>Zwrócimy pieniądze, jeśli nie zdasz egzaminu</h1>
-    </div>
+
+    <cta-iconery :name="'grosze'" :icons="icons.grosze">
+      <div id="content" slot="content" class="section-cta--grosze-content">
+      <h1>Zwrócimy pieniądze, jeśli nie zdasz egzaminu</h1>
+        </div>
+    </cta-iconery>
+
     <faq-wrapper>
       <h1 class="text-center text-heading">FAQ</h1>
       <faq-item v-for="i in faq" :key="i.id" :data="i" /> 
@@ -134,6 +144,8 @@ Użyj specjalnego systemu podpowiedzi, jeśli zadanie jest zbyt trudne
 import { mapState } from 'vuex';
 import BtnRegular from "../components/btn/btn-regular.vue";
 import Callback from '../components/callback/callback.vue';
+import CtaHeader from '../components/cta/cta-header.vue';
+import CtaIconery from '../components/cta/cta-iconery.vue';
 import FaqItem from '../components/faq/faq-item.vue';
 import FaqWrapper from '../components/faq/faq-wrapper.vue';
 import FooterRegular from '../components/footer/footer-regular.vue';
@@ -148,9 +160,11 @@ export default {
     FaqWrapper,
     FaqItem,
     Callback,
+    CtaHeader,
+    CtaIconery
   },
   computed:{
-    ...mapState(["faq"]),
+    ...mapState(["faq", "icons"]),
   }
 };
 </script>

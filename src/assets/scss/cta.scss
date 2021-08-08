@@ -1,0 +1,247 @@
+@mixin icon_anim($width, $height, $pos_left, $pos_top) {
+    display: none;
+    position: absolute;
+    width: $width;
+    height: $height;
+    left: $pos_left;
+    top: $pos_top;
+
+    &--active {
+        display: block;
+        animation: animIcon 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+
+    @keyframes animIcon {
+        0% {
+            position: absolute;
+            opacity: 0;
+            top: 50%;
+            left: 50%;
+            // top: calc($pos_top - 20px);
+        }
+
+        100% {
+            position: absolute;
+            opacity: 1;
+
+        }
+    }
+}
+
+
+
+.cta {
+    &-grosze {
+        &-illustration {
+
+            .pos {
+                &-fm {
+                    &-grosze {
+                        &-money{
+                            &-flies {
+                                &-1 {
+                                    @include icon_anim(56px, 56px, 283px, 265px)
+                                }
+    
+                                &-2 {
+                                    @include icon_anim(56px, 56px, 1102px, 560px)
+                                }
+                            }
+    
+                            &-eur {
+                                &-1 {
+                                    @include icon_anim(56px, 56px, 556px, 206px)
+                                }
+    
+                                &-2 {
+                                    @include icon_anim(56px, 56px, 829px, 638px)
+                                }
+                            }
+    
+                            &-usd {
+                                &-1 {
+                                    @include icon_anim(56px, 56px, 829px, 206px)
+                                }
+    
+                                &-2 {
+                                    @include icon_anim(56px, 56px, 556px, 638px)
+                                }
+                            }
+    
+                            &-pound {
+                                &-1 {
+                                    @include icon_anim(56px, 56px, 1102px, 284px)
+                                }
+    
+                                &-2 {
+                                    @include icon_anim(56px, 56px, 283px, 560px)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-szkolenie {
+        &-illustration {
+            .pos {
+                &-fm {
+                    &-szkolenie {
+                        &-heart {
+                            &-1 {
+                                @include icon_anim(56px, 56px, 556px, 206px);
+                            }
+                        }
+
+                        &-teacher {
+                            &-1 {
+                                @include icon_anim(56px, 56px, 283px, 284px);
+                            }
+                        }
+
+                        &-writing {
+                            &-1 {
+                                @include icon_anim(56px, 56px, 829px, 206px);
+                            }
+                        }
+
+                        &-monocle {
+                            &-1 {
+                                @include icon_anim(56px, 56px, 1102px, 284px);
+                            }
+                        }
+
+                        &-hundred {
+                            &-1 {
+                                @include icon_anim(56px, 56px, 283px, 560px);
+                            }
+                        }
+
+                        &-student {
+                            &-1 {
+                                @include icon_anim(56px, 56px, 556px, 638px);
+                            }
+                        }
+
+                        &-brain {
+                            &-1 {
+                                @include icon_anim(56px, 56px, 829px, 638px);
+                            }
+                        }
+
+                        &-student-laptop {
+                            &-1 {
+                                @include icon_anim(56px, 56px, 1102px, 560px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-masthead {
+        position: relative;
+        width: 100%;
+        height: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 85%;
+            text-align: center;
+
+            h1,
+            h2,
+            .only-text {
+                margin-bottom: abs($px*3);
+            }
+
+            .only-text {
+                @include text-style-body-body-18;
+                color: $color-text-body-blue-yonder;
+            }
+
+            .btn {
+                width: fit-content;
+            }
+        }
+
+        &-illustration {
+            .pos {
+                &-fm {
+                    &-laptop {
+                        &-1 {
+                            @include icon_anim(24px, 24px, 974px, 762px);
+                        }
+                    }
+
+                    &-monocle {
+                        &-1 {
+                            @include icon_anim(32px, 32px, 221px, 775px);
+                        }
+                    }
+
+                    &-heart {
+                        &-1 {
+                            @include icon_anim(32px, 32px, 1290px, 267px);
+                        }
+
+                        &-2 {
+                            @include icon_anim(24px, 24px, 140px, 460px);
+                        }
+                    }
+
+                    &-teacher {
+                        &-1 {
+                            @include icon_anim(48px, 48px, 1112px, 193px);
+                        }
+                    }
+
+                    &-writing {
+                        &-1 {
+                            @include icon_anim(32px, 32px, 647px, 160px);
+                        }
+                    }
+
+                    &-brain {
+                        &-1 {
+                            @include icon_anim(24px, 24px, 894px, 177px);
+                        }
+
+                        &-2 {
+                            @include icon_anim(48px, 48px, 322px, 604px);
+                        }
+                    }
+
+                    &-hundred {
+                        &-1 {
+                            @include icon_anim(32px, 32px, 435px, 114px);
+                        }
+
+                        &-2 {
+                            @include icon_anim(32px, 32px, 615px, 787px);
+                        }
+                    }
+
+                    &-student {
+                        &-1 {
+                            @include icon_anim(48px, 48px, 128px, 202px);
+                        }
+
+                        &-2 {
+                            @include icon_anim(48px, 48px, 1119px, 546px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

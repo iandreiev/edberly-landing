@@ -4,6 +4,13 @@ $icon-student: url(../img/icons/Figmoji/Student.svg);
 $icon-heart: url(../img/icons/Figmoji/Heart.svg);
 $icon-laptop: url(../img/icons/Figmoji/boy_laptop.svg);
 $icon-writing: url(../img/icons/Figmoji/Writing.svg);
+$icon-monocle: url(../img/icons/Figmoji/SmileMonocle.svg);
+$icon-brain: url(../img/icons/Figmoji/Brain.svg);
+$icon-hang-up: url(../img/icons/Figmoji/HandUp.svg);
+$icon-money-flies: url(../img/icons/Figmoji/MoneyFlies.svg);
+$icon-money-eur: url(../img/icons/Figmoji/MoneyEur.svg);
+$icon-money-usd: url(../img/icons/Figmoji/MoneyBucks.svg);
+$icon-money-pound: url(../img/icons/Figmoji/MoneyP.svg);
 
 @mixin icon($name){
     background: $name center center no-repeat;
@@ -31,4 +38,28 @@ $icon-writing: url(../img/icons/Figmoji/Writing.svg);
     &-student-laptop{
         @include icon($icon-laptop);
     }
+    &-brain{
+        @include icon($icon-brain);
+    }
+    &-monocle{
+        @include icon($icon-monocle);
+    }
+    &-hang-up{
+        @include icon($icon-hang-up);
+    }
+    &-money{
+        &-eur{
+            @include icon($icon-money-eur);
+        }
+        &-usd{
+            @include icon($icon-money-usd);
+        }
+        &-pound{
+            @include icon($icon-money-pound);
+        }
+        &-flies{
+            @include icon($icon-money-flies);
+        }
+    }
 }
+

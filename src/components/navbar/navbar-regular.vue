@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar" :class="{'navbar-fixed': changeNav == true}">
+  <div class="navbar navbar-fixed" :class="{'navbar-fixed': changeNav == true}">
           <div class="navbar-logo"></div>
           <div class="navbar-items">
               <div class="navbar-items-item" v-for="i in nav" :key="i.id">
@@ -33,7 +33,7 @@ export default {
     },
     mounted(){
         window.onscroll = () => {
-      this.headerOnScroll();
+    //   this.headerOnScroll();
     };
     }
 }
