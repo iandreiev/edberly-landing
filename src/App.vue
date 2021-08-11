@@ -1,19 +1,15 @@
 <template>
   <div id="app">
-    <navbarRegular />
-    <div id="jelly">
       <router-view></router-view>
-    </div>
   </div>
 </template>
 
 <script>
-import navbarRegular from "./components/navbar/navbar-regular.vue";
+import {JellyScroll} from "jelly-scroll"
 
 export default {
-  components: { navbarRegular },
   mounted() {
-
+    // JellyScroll('app')
   },
 };
 </script>

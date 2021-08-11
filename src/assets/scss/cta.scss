@@ -28,7 +28,84 @@
     }
 }
 
+.cta {
+    &-auth {
+        &-illustration {
 
+            .pos {
+                &-fm {
+                    &-auth {
+                        &-heart {
+                            &-1 {
+                                @include icon_anim(24px, 24px, 140px, 162px);
+                            }
+                            &-2{
+                                @include icon_anim(24px, 24px, 463px, 804px);
+
+                            }
+                        }
+
+                        &-teacher-image {
+                            &-1 {
+                                @include icon_anim(167px, 167px, 133px, 109px);
+                                transform: rotate(15deg);
+                            }
+
+                            &-2 {
+                                @include icon_anim(244px, 244px, 595px, 103px);
+                                transform: rotate(-15deg);
+                            }
+
+                            &-3 {
+                                @include icon_anim(167px, 167px, -59px, 469px);
+                                transform: rotate(15deg);
+                            }
+
+                            &-4 {
+                                @include icon_anim(167px, 167px, 389px, 656px);
+                                transform: rotate(15deg);
+                            }
+                        }
+
+                        &-brain {
+                            &-1 {
+                                @include icon_anim(80px, 80px, 386px, 234px);
+                            }
+                        }
+
+                        &-monocle {
+                            &-1 {
+                                @include icon_anim(48px, 48px, 605px, 133px);
+                                z-index: 2;
+                            }
+
+                            &-2 {
+                                @include icon_anim(24px, 24px, 132px, 524px);
+                                z-index: 2;
+                            }
+                        }
+
+                        &-student {
+                            &-1 {
+                                @include icon_anim(80px, 80px, 138px, 724px);
+                            }
+                        }
+
+                        &-hundred {
+                            &-1 {
+                                @include icon_anim(48px, 48px, 466px, 548px);
+                            }
+
+                            &-2 {
+                                @include icon_anim(48px, 48px, 629px, 723px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 .cta {
     &-grosze {
@@ -37,42 +114,42 @@
             .pos {
                 &-fm {
                     &-grosze {
-                        &-money{
+                        &-money {
                             &-flies {
                                 &-1 {
                                     @include icon_anim(56px, 56px, 283px, 265px)
                                 }
-    
+
                                 &-2 {
                                     @include icon_anim(56px, 56px, 1102px, 560px)
                                 }
                             }
-    
+
                             &-eur {
                                 &-1 {
                                     @include icon_anim(56px, 56px, 556px, 206px)
                                 }
-    
+
                                 &-2 {
                                     @include icon_anim(56px, 56px, 829px, 638px)
                                 }
                             }
-    
+
                             &-usd {
                                 &-1 {
                                     @include icon_anim(56px, 56px, 829px, 206px)
                                 }
-    
+
                                 &-2 {
                                     @include icon_anim(56px, 56px, 556px, 638px)
                                 }
                             }
-    
+
                             &-pound {
                                 &-1 {
                                     @include icon_anim(56px, 56px, 1102px, 284px)
                                 }
-    
+
                                 &-2 {
                                     @include icon_anim(56px, 56px, 283px, 560px)
                                 }

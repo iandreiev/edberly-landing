@@ -1,6 +1,6 @@
 <template>
   <div id="course">
-
+      <navbar-regular />
     <section class="section-row section-cta--course">
         <div class="section-block">
                     <h1>Przygotuj się do matury z matematyki podstawowej na 100%</h1>

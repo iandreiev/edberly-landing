@@ -13,6 +13,16 @@ const routes = [
     path: '/course',
     name: 'Course',
     component: ()=>import('../views/Course')
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: ()=>import('../views/Register')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: ()=>import('../views/Login')
   }
 ]
 

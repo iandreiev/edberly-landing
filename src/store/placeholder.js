@@ -38,7 +38,7 @@ module.exports.nav = [
     },
     {
         id: 2,
-        path: "#",
+        path: "Login",
         name: "Zaloguj sie"
     }
 ]

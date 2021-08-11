@@ -26,6 +26,20 @@
                 color: $color-fill-button-white;
             }
         }
+
+        &--info{
+            border: 1px solid $color-icons-ultramarine-blue;
+            background: $color-icons-ultramarine-blue;
+            span{
+            color: $color-fill-button-white;
+            @include text-style-button-button-18;
+            
+            }
+            &:hover{
+                background: $color-fill-button-klein-blue;
+                color: $color-fill-button-white;
+            }
+        }
     }
     &-icon{
         padding: 18px;

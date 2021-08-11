@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import {footer_nav, faq, howto, themes, subscription} from "./placeholder"
-import {nauka, grosze} from "./icons"
+import {nauka, grosze, authpage} from "./icons"
 
 Vue.use(Vuex)
 
@@ -15,7 +15,8 @@ export default new Vuex.Store({
     subscription,
     icons:{
       nauka: nauka,
-      grosze: grosze
+      grosze: grosze,
+      auth: authpage
     }
   },
   mutations: {

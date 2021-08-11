@@ -48,3 +48,18 @@ h4{
         font-size: 24px;
     }
 }
+
+a{
+    text-decoration: none;
+    color: $color-stroke-border-klein-blue;
+    @include text-style-body-body-18;
+    
+    &:active,
+    &:visited,
+    &:hover{
+        text-decoration: none;
+        color: $color-stroke-border-klein-blue;
+        @include text-style-body-body-18;
+
+    }
+}

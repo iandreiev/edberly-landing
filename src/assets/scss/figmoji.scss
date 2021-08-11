@@ -11,6 +11,7 @@ $icon-money-flies: url(../img/icons/Figmoji/MoneyFlies.svg);
 $icon-money-eur: url(../img/icons/Figmoji/MoneyEur.svg);
 $icon-money-usd: url(../img/icons/Figmoji/MoneyBucks.svg);
 $icon-money-pound: url(../img/icons/Figmoji/MoneyP.svg);
+$icon-teacher-image: url(../img/TeacherBorder.png);
 
 @mixin icon($name){
     background: $name center center no-repeat;
@@ -22,6 +23,9 @@ $icon-money-pound: url(../img/icons/Figmoji/MoneyP.svg);
 .fm{
     &-teacher{
         @include icon($icon-teacher);
+        &-image{
+            @include icon($icon-teacher-image);
+        }
     }
     &-hundred{
         @include icon($icon-hundred);

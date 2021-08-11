@@ -83,3 +83,66 @@ module.exports.grosze = [
         meta: 2
     },
 ]
+
+module.exports.authpage = [
+    {
+        id: 0,
+        icon: 'heart',
+        meta: 1
+    },
+    {
+        id: 1,
+        icon: 'teacher-image',
+        meta: 1
+    },
+    {
+        id: 2,
+        icon: 'brain',
+        meta: 1
+    },
+    {
+        id: 3,
+        icon: 'monocle',
+        meta: 1
+    },
+    {
+        id: 4,
+        icon: 'teacher-image',
+        meta: 2
+    },
+    {
+        id: 5,
+        icon: 'teacher-image',
+        meta: 3
+    },
+    {
+        id: 6,
+        icon: 'monocle',
+        meta: 2
+    },
+    {
+        id: 7,
+        icon: 'student',
+        meta: 1
+    },
+    {
+        id: 8,
+        icon: 'teacher-image',
+        meta: 4
+    },
+    {
+        id: 9,
+        icon: 'hundred',
+        meta: 1
+    },
+    {
+        id: 10,
+        icon: 'hundred',
+        meta: 2
+    },
+    {
+        id: 11,
+        icon: 'heart',
+        meta: 2
+    },
+]

@@ -1,5 +1,7 @@
 <template>
   <div id="home">
+      <navbar-regular />
+
     <cta-header>
       <div id="content" slot="content" class="cta-masthead-content">
               <h1>Przygotuj się na 100% do matury</h1>
